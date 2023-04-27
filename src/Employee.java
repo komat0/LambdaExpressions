@@ -1,14 +1,12 @@
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Employee
-{
+public class Employee {
     private String name;
     private Integer salary;
     private Date workStart;
 
-    public Employee(String name, Integer salary, Date workStart)
-    {
+    public Employee(String name, Integer salary, Date workStart) {
         this.name = name;
         this.salary = salary;
         this.workStart = workStart;
@@ -38,9 +36,8 @@ public class Employee
         this.workStart = workStart;
     }
 
-    public String toString()
-    {
+    public String toString() {
         return name + " - " + salary + " - " +
-            (new SimpleDateFormat("dd.MM.yyyy")).format(workStart);
+               (new SimpleDateFormat("dd.MM.yyyy")).format(workStart);
     }
 }
